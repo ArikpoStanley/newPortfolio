@@ -1,5 +1,6 @@
 import { useState } from "react";
-import {message} from "antd"
+import toast from "react-hot-toast";
+
 const Admin = () => {
   const [title, setTitle] = useState("");
   const [url, setUrl] = useState("");
@@ -34,10 +35,10 @@ const Admin = () => {
   
       const data = await response.json();
       console.log("Server Response:", data);
-      message.success("Project successfully added!");
+      toast.success("Project successfully added!");
     } catch (error) {
       console.error("Upload failed:", error);
-      message.error("Failed to submit project.");
+      toast.error("Failed to submit project.");
     }
   };
   

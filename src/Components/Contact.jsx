@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import {FaMessage, FaUser} from 'react-icons/fa6'
 import { FaEnvelope } from 'react-icons/fa'
 import axios from 'axios'
-import { message } from 'antd'
 import Image from "next/image"
 import toast, { Toaster } from 'react-hot-toast';
 const Contact = () => {
