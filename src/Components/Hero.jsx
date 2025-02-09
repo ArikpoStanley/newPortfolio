@@ -45,7 +45,7 @@ const Hero = () => {
             <h1 className='font-extrabold text-4xl font-sans mt-4' data-aos="fade-up" data-aos-duration="2000">STANLEY SAMUEL</h1>
             <h4 className='text-2xl font-extrabold '> 
              I am a <br /> <TypeAnimation speed={50}
-            repeat={Infinity} className='text-blue-800 bg-white rounded-3xl px-2 text-3xl leading-[2]' sequence={[
+            repeat={Infinity} className='text-blue-800 bg-white rounded-3xl px-4 text-2xl leading-[2]' sequence={[
               'FullStack Developer', 2000,
               'Automation Tester', 2000,
               'Backend Developer', 2000,
