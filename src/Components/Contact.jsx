@@ -25,7 +25,7 @@ const Contact = () => {
       }
       
   return (
-    <div className='bg-[url("/portfolio-img3.png")] '>
+    <div id='contact' className='bg-[url("/portfolio-img3.png")] '>
         <div className='flex lg:flex-row flex-col py-20 mx-auto ' > 
         <div className='lg:w-1/2 w-full mx-auto ' data-aos="fade-left" data-aos-duration="2000">
             <Image className='bg-gradient-to-r from-black via-black to-transparent rounded-full mx-auto lg:mx-0' width={450} height={500} objectFit='contain' src={"/new1.png"} alt="" data-aos="fade-down" data-aos-duration="2000" />

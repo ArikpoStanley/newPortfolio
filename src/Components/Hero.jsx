@@ -40,7 +40,7 @@ const Hero = () => {
 
   return (
     <>
-    <div  className='flex lg:flex-row flex-col-reverse justify-between px-0 bg-[url("/portfolio-img1.png")] pt-16'>
+    <div id='hero' className='flex lg:flex-row flex-col-reverse justify-between px-0 bg-[url("/portfolio-img1.png")] pt-16'>
         <div className='lg:w-2/5 w-full text-white lg:text-left text-center rounded-xl bg-gradient-to-r from-black  via-black to-transparent p-5' data-aos="fade-up-left" data-aos-duration="2000">
             <h1 className='font-extrabold text-4xl font-sans mt-4' data-aos="fade-up" data-aos-duration="2000">STANLEY SAMUEL</h1>
             <h4 className='text-2xl font-extrabold '> 

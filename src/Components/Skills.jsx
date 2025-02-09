@@ -55,7 +55,7 @@ const Skills = () => {
     {title: "PostgreSQL js", percent: "75%"},
   ]
   return (
-    <div className='px-5 text-white flex items-center justify-center py-28 bg-[url("/portfolio-img2.png")] h-screen'>
+    <div id='skill' className='px-5 text-white flex items-center justify-center py-28 bg-[url("/portfolio-img2.png")] h-screen'>
       <div className='container bg-gray-900 mx-auto rounded-2xl pt-8'>
         <div className='mx-auto  flex-col'>
        <div className='mx-auto flex flex-col justify-center items-center mb-6 text-center w-4/5' data-aos="fade-up" data-aos-duration="2000">
