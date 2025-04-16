@@ -7,14 +7,16 @@ import Contact from '@/Components/Contact';
 import Footer from '@/Components/Footer';
 const Portfolio = () => {
     return (
-      <div className='bg-[url("/site-bg.png")] '>
-          <Navbar/>
+     <div className='bg-[url("/site-bg.png")]'>
+        <Navbar/>
+       <div className=''>
           <Hero />
           <Skills />
           <Projects />
           <Contact />
-          <Footer />
         </div>
+        <Footer />
+     </div>
       );
 }
 

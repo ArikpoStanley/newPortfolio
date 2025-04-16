@@ -40,7 +40,7 @@ const Hero = () => {
 
   return (
     <>
-    <div id='hero' className='flex lg:flex-row flex-col-reverse justify-between px-0 bg-[url("/portfolio-img1.png")] pt-16'>
+    <div id='hero' className='mx-auto flex lg:flex-row flex-col-reverse justify-between px-0 bg-[url("/portfolio-img1.png")] pt-16'>
         <div className='lg:w-2/5 w-full text-white lg:text-left text-center rounded-xl bg-gradient-to-r from-black  via-black to-transparent p-5' data-aos="fade-up-left" data-aos-duration="2000">
             <h1 className='font-extrabold text-4xl font-sans mt-4' data-aos="fade-up" data-aos-duration="2000">STANLEY SAMUEL</h1>
             <h4 className='text-2xl font-extrabold '> 
@@ -69,11 +69,11 @@ const Hero = () => {
             <p className='w-[100px] font-extrabold'>Satisfied Clients</p>
             </div>
             </div>
-            <button data-aos="flip-left" data-aos-duration="2000" className='flex lg:mx-0 mx-auto flex-row bg-teal-700 py-2 px-4 font-extrabold rounded-br-[40px] mt-6 border-2 border-white border-inset hover:scale-125 transition duration-500' onClick={download}>Download CV<FaArrowRight className='pt-1 ml-4 mt-1 font-extrabold'/></button>
+            <button data-aos="flip-left" data-aos-duration="2000" className='flex lg:mx-0 mx-auto flex-row bg-[#0e0425] py-2 px-4 font-extrabold rounded-br-[40px] mt-6 border-2 border-white border-inset hover:scale-125 transition duration-500' onClick={download}>Download CV<FaArrowRight className='pt-1 ml-4 mt-1 font-extrabold'/></button>
         </div>
         <div className='mx-auto justify-betwen flex flex-col bg-gradient-to-r from-transparent  via-black to-transparent ' data-aos="fade-up-right" data-aos-duration="2000">
             <div className='rounded-full bg-gradient-to-b from- black to-transparent'>
-            <Image className='lg:mx-0 mx-auto rounded-full ' src={pic} width={600} height={300} alt="" />
+            <Image className='lg:mx-0 mx-auto rounded-full drop-shadow drop-shadow-white' src={pic} width={600} height={300} alt="" />
             </div>
             <div className='social-icons flex flex-row justify-center py-2 space-x-2 visible lg:hidden md:hidden text-white mx-auto'>
                     <a href="https://facebook.com/ExcellenceJnr" className=' hover:bg-gradient-to-t from-indigo-700 via-fuchsia-600 to-transparent border-2 hover:animate-bounce rounded-full border-purple-600 p-2'><FaFacebook /></a>

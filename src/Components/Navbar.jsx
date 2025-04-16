@@ -8,11 +8,11 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="w-screen fixed shadow-sm shadow-white z-20 bg-gray-800">
+    <div className="w-screen fixed shadow-sm shadow-white z-20 bg-[#130A38]">
       <div className="flex justify-between items-center py-2 px-4 lg:px-4">
         {/* Logo */}
         <div>
-          <img src={"/Logo.png"} alt="Logo" className="w-[30px] bg-white bg-transparent" />
+          <img src={"/Logo.png"} alt="Logo" className="w-[30px] rounded-lg bg-white bg-transparent" />
         </div>
 
         {/* Desktop Navigation */}

@@ -55,14 +55,16 @@ const Skills = () => {
     {title: "PostgreSQL js", percent: "75%"},
   ]
   return (
-    <div id='skill' className='px-5 text-white flex items-center justify-center py-28 bg-[url("/portfolio-img2.png")] h-screen'>
+    <div id='skill' className='px-5 text-white flex items-center justify-center py-28 bg-[url("/portfolio-img2.png")]'>
       <div className='container bg-gray-900 mx-auto rounded-2xl pt-8'>
         <div className='mx-auto  flex-col'>
        <div className='mx-auto flex flex-col justify-center items-center mb-6 text-center w-4/5' data-aos="fade-up" data-aos-duration="2000">
        <h1 className='font-extrabold text-3xl mb-10 underline'>Skills</h1>
-        <p className='items-center font-bold'>Over the years i have accumulated by virtue of experience a 
-        number of skills that have proven to be very helpful and of great assistance and
-         application both to life and my tech career. Some of which are...</p>
+        <p className='items-center font-bold'>As a versatile full-stack developer, I've mastered a comprehensive range of modern web technologies. 
+  My expertise spans from React, Vue, and Angular on the frontend to Node.js, PHP/Laravel, and AWS on the backend. 
+  I excel in creating responsive, scalable applications using Next.js, TypeScript, and various state management solutions. 
+  My technical toolkit includes specialized skills in data visualization, no-code platforms, and e-commerce solutions—all 
+  developed through hands-on experience across diverse projects.</p>
        </div>
           <Carousel  centerMode responsive={responsive} infinite={true} className='skill-slider pb-10 flex items-center justify-center ' >
          {skills?.map((skill, index)=>(
