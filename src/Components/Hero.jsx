@@ -3,7 +3,7 @@ import pic from '../../public/pic.png'
 import { FaArrowRight } from 'react-icons/fa'
 import { TypeAnimation } from 'react-type-animation'
 import CountUp from 'react-countup'
-import { FaFacebook, FaWhatsapp, FaInstagram, FaLinkedin, FaGithub,} from 'react-icons/fa'
+import { FaDownload, FaFacebook, FaWhatsapp, FaInstagram, FaLinkedin, FaGithub,} from 'react-icons/fa'
 import Image from 'next/image'
 import toast from 'react-hot-toast'
 
@@ -37,11 +37,10 @@ const Hero = () => {
       }
     };
   
-
   return (
     <>
-    <div id='hero' className='mx-auto flex lg:flex-row flex-col-reverse justify-between px-0 bg-[url("/portfolio-img1.png")] pt-16'>
-        <div className='lg:w-2/5 w-full text-white lg:text-left text-center rounded-xl bg-gradient-to-r from-black  via-black to-transparent p-5' data-aos="fade-up-left" data-aos-duration="2000">
+    <div id='hero' className='flex lg:flex-row flex-col-reverse justify-between px-0 bg-[url("/portfolio-img1.png")] pt-16 '>
+        <div className='lg:w-2/5 w-full text-white lg:text-left text-center md:px-20 rounded-xl bg-gradient-to-r from-black via-black to-transparent p-5' data-aos="fade-up-left" data-aos-duration="2000">
             <h1 className='font-extrabold text-4xl font-sans mt-4' data-aos="fade-up" data-aos-duration="2000">STANLEY SAMUEL</h1>
             <h4 className='text-2xl font-extrabold '> 
              I am a <br /> <TypeAnimation speed={50}
@@ -53,8 +52,8 @@ const Hero = () => {
               'MERN Stack Developer', 2000,
               'Software Engineer', 2000,
               ]} /></h4>
-            <p className='font-bold mt-2'><span className='text-2xl font-extrabold'>W</span>elcome to my page and feel free to explore, I have been a developer for quite a number of years with a huge amount of experience in current Web Architecture and good hands on technologies like bootstrap, tailwind css, 
-            Nodejs, Typescript, ReactJs, React Typescript, Javascript, React-Bootstrap and a host of others too numerous to mention... I have also participated in building and implementing different technological solutions over the years. Feel free to explore...</p>
+            <p className='font-bold mt-2'><span className='text-2xl font-extrabold'>W</span>elcome to my page and feel free to explore, I have been a fullstack developer for over 5 of years with a great experience in building web and mobile applications and good hands on technologies like Typescript, Redux, 
+            Nodejs, Express js, React Js, Javascript, and a host of others too numerous to mention... I have also participated in building and implementing different technological solutions over the years. Feel free to explore...</p>
             <div className='flex flex-row p-4 leading-1 lg:text-left text-center lg:justify-start justify-center'>
             <div>
             <CountUp className='bg-clip-text  bg-gradient-to-r from-fuchsia-800 via-green-500 to-indigo-800 text-transparent text-6xl font-extrabold' start={0} end={5} duration={30} />
@@ -69,9 +68,9 @@ const Hero = () => {
             <p className='w-[100px] font-extrabold'>Satisfied Clients</p>
             </div>
             </div>
-            <button data-aos="flip-left" data-aos-duration="2000" className='flex lg:mx-0 mx-auto flex-row bg-[#0e0425] py-2 px-4 font-extrabold rounded-br-[40px] mt-6 border-2 border-white border-inset hover:scale-125 transition duration-500' onClick={download}>Download CV<FaArrowRight className='pt-1 ml-4 mt-1 font-extrabold'/></button>
+            <button data-aos="flip-left" data-aos-duration="2000" className='flex lg:mx-0 mx-auto flex-row bg-[#00244D] py-2 px-4 font-bold rounded-lg items-center mt-6 border-2 border-white border-inset hover:scale-125 transition duration-500' onClick={download}>Download CV<FaDownload size={13} className=' ml-4 '/></button>
         </div>
-        <div className='mx-auto justify-betwen flex flex-col bg-gradient-to-r from-transparent  via-black to-transparent ' data-aos="fade-up-right" data-aos-duration="2000">
+        <div className='mx-auto justify-between flex flex-col bg-gradient-to-r from-transparent  via-black to-transparent ' data-aos="fade-up-right" data-aos-duration="2000">
             <div className='rounded-full bg-gradient-to-b from- black to-transparent'>
             <Image className='lg:mx-0 mx-auto rounded-full drop-shadow drop-shadow-white' src={pic} width={600} height={300} alt="" />
             </div>

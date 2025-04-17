@@ -1,14 +1,39 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaRegWindowClose, FaAlignJustify, FaFacebook, FaWhatsapp, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import Link from "next/link";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  
+  // Handle scroll event to change navbar appearance
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 20;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    // Add event listener
+    window.addEventListener('scroll', handleScroll);
+    
+    // Clean up event listener
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrolled]);
 
   return (
-    <div className="w-screen fixed shadow-sm shadow-white z-20 bg-[#130A38]">
+    <div 
+      className={`w-screen py-5 fixed z-20 transition-all duration-300 ${
+        scrolled 
+          ? "bg-opacity-50 backdrop-blur-sm shadow-md" 
+          : "bg-opacity-100 shadow-sm shadow-white "
+      } bg-[#130A38]`}
+    >
       <div className="flex justify-between items-center py-2 px-4 lg:px-4">
         {/* Logo */}
         <div>
@@ -70,10 +95,10 @@ function Navbar() {
 
             {/* Navigation Links */}
             <ul className="flex flex-col items-center w-full gap-8 text-lg font-bold text-white">
-              <Link href="#hero"><li className="hover:text-[#3A0879] cursor-pointer">Home</li></Link>
-              <Link href="#project"><li className="hover:text-[#3A0879] cursor-pointer">Projects</li></Link>
-              <Link href="#skill"><li className="hover:text-[#3A0879] cursor-pointer">Skills</li></Link>
-              <Link href="#contact"><li className="hover:text-[#3A0879] cursor-pointer">Contact</li></Link>
+              <Link href="#hero" onClick={() => setMenuOpen(false)}><li className="hover:text-[#3A0879] cursor-pointer">Home</li></Link>
+              <Link href="#project" onClick={() => setMenuOpen(false)}><li className="hover:text-[#3A0879] cursor-pointer">Projects</li></Link>
+              <Link href="#skill" onClick={() => setMenuOpen(false)}><li className="hover:text-[#3A0879] cursor-pointer">Skills</li></Link>
+              <Link href="#contact" onClick={() => setMenuOpen(false)}><li className="hover:text-[#3A0879] cursor-pointer">Contact</li></Link>
             </ul>
           </motion.div>
         </>

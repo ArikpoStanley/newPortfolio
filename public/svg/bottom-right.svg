@@ -1,0 +1,21 @@
+<svg width="135" height="107" viewBox="0 0 135 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 36884">
+<rect id="Rectangle 43" x="91.3086" y="29.2397" width="45.4001" height="121.711" rx="10.8671" fill="url(#paint0_linear_175_824)"/>
+<rect id="Rectangle 40" x="45.666" y="0.985352" width="45.4001" height="121.711" rx="10.8671" fill="url(#paint1_linear_175_824)"/>
+<rect id="Rectangle 42" x="0.0253906" y="40.8313" width="45.4001" height="121.711" rx="10.8671" fill="url(#paint2_linear_175_824)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_175_824" x1="113.58" y1="182.596" x2="45.8218" y2="148.779" gradientUnits="userSpaceOnUse">
+<stop stop-color="#01244B"/>
+<stop offset="1" stop-color="#011832"/>
+</linearGradient>
+<linearGradient id="paint1_linear_175_824" x1="67.9378" y1="154.341" x2="0.179216" y2="120.524" gradientUnits="userSpaceOnUse">
+<stop stop-color="#01244B"/>
+<stop offset="1" stop-color="#011832"/>
+</linearGradient>
+<linearGradient id="paint2_linear_175_824" x1="22.2972" y1="194.187" x2="-45.4614" y2="160.37" gradientUnits="userSpaceOnUse">
+<stop stop-color="#01244B"/>
+<stop offset="1" stop-color="#011832"/>
+</linearGradient>
+</defs>
+</svg>
