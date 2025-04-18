@@ -12,14 +12,12 @@ const Portfolio = () => {
        AOS.init();    
      }, []);
     return (
-     <div className='bg-[url("/site-bg.png")]'>
+     <div className='bg-[url("/site-bg.png")] overflow-x-hidden'>
         <Navbar/>
-       <div className=''>
-          <Hero />
-          <Skills />
-          <Projects />
-          <Contact />
-        </div>
+        <Hero />
+        <Skills />
+        <Projects />
+        <Contact />
         <Footer />
      </div>
       );

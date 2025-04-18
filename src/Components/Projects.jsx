@@ -73,7 +73,7 @@ const Projects = () => {
                 onClick={() => setFilter(category)}
                 className={`px-4 py-2 rounded-md transition-colors duration-300 ${
                   filter === category
-                    ? "bg-purple-700 hover:bg-gradient-to-t from-indigo-700 via-fuchsia-600 to-transparent text-white"
+                    ? "bg-[#130A38] hover:bg-gradient-to-t from-indigo-700 via-fuchsia-600 to-transparent text-white"
                     : "text-white hover:bg-gradient-to-t from-indigo-700 via-fuchsia-600 to-transparent hover:bg-opacity-40"
                 }`}
               >
@@ -126,7 +126,7 @@ const Projects = () => {
                         href={project.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center px-3 py-2 rounded-md hover:bg-gradient-to-t from-indigo-700 via-fuchsia-600 to-transparent bg-purple-700 hover:bg-purple-800 transition-colors duration-300 text-sm"
+                        className="inline-flex items-center px-3 py-2 rounded-md hover:bg-gradient-to-t from-[#130A38] to-transparent bg-[#130A38] transition-colors duration-300 text-sm"
                       >
                         View Project
                       </a>
@@ -154,7 +154,7 @@ const Projects = () => {
                       onClick={() => paginate(number)}
                       className={`px-3 py-1 border-t border-b border-purple-900 ${
                         currentPage === number
-                          ? "bg-purple-700 text-white hover:bg-gradient-to-t from-indigo-700 via-fuchsia-600 to-transparent border-purple-600"
+                          ? "bg-[#130A38] text-white hover:bg-gradient-to-t from-indigo-700 via-fuchsia-600 to-transparent border-purple-600"
                           : "bg-black bg-opacity-50 hover:bg-gradient-to-t from-indigo-700 via-fuchsia-600 to-transparent"
                       }`}
                     >

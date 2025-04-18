@@ -27,48 +27,50 @@ function Navbar() {
   }, [scrolled]);
 
   return (
-    <div 
-      className={`w-screen py-5 fixed z-20 transition-all duration-300 ${
-        scrolled 
-          ? "bg-opacity-50 backdrop-blur-sm shadow-md" 
-          : "bg-opacity-100 shadow-sm shadow-white "
-      } bg-[#130A38]`}
-    >
-      <div className="flex justify-between items-center py-2 px-4 lg:px-4">
-        {/* Logo */}
-        <div>
-          <img src={"/Logo.png"} alt="Logo" className="w-[30px] rounded-lg bg-white bg-transparent" />
-        </div>
-
-        {/* Desktop Navigation */}
-        <div className="hidden lg:flex lg:flex-row text-white justify-between space-x-[350px]">
-          <ul className="flex gap-4 text-[18px] font-bold">
-            <Link href="#hero"><li className="hover:text-[#3A0879] cursor-pointer">Home</li></Link>
-            <Link href="#project"><li className="hover:text-[#3A0879] cursor-pointer">Projects</li></Link>
-            <Link href="#skill"><li className="hover:text-[#3A0879] cursor-pointer">Skills</li></Link>
-            <Link href="#contact"><li className="hover:text-[#3A0879] cursor-pointer">Contact</li></Link>
-          </ul>
-          <div className="social-icons flex flex-row ml-60 justify-between space-x-2">
-            <a href="https://facebook.com/ExcellenceJnr" className="hover:bg-gradient-to-t from-indigo-700 via-fuchsia-600 to-transparent border-2 hover:animate-bounce rounded-full border-purple-600 p-2"><FaFacebook /></a>
-            <a href="https://github.com/stanley-samuel123" className="hover:bg-gradient-to-t from-indigo-700 via-fuchsia-600 to-transparent border-2 hover:animate-bounce rounded-full border-purple-600 p-2"><FaGithub /></a>
-            <a href="https://linkedin.com/in/stanley-samuel-8baa38277" className="hover:bg-gradient-to-t from-indigo-700 via-fuchsia-600 to-transparent border-2 hover:animate-bounce rounded-full border-purple-600 p-2"><FaLinkedin /></a>
-            <a href="https://instagram.com/stanleysamuel70" className="hover:bg-gradient-to-t from-indigo-700 via-fuchsia-600 to-transparent border-2 rounded-full hover:animate-bounce border-purple-600 p-2"><FaInstagram /></a>
-            <a href="https://wa.me/message/JFS322SF713HKI" className="hover:bg-gradient-to-t from-indigo-700 via-fuchsia-600 to-transparent border-2 hover:animate-bounce rounded-full border-purple-600 p-2"><FaWhatsapp /></a>
+    <div className="flex justify-center w-full fixed top-0 z-50">
+      <div 
+        className={`py-4 px-4 transition-all duration-300 ${
+          scrolled 
+            ? "bg-opacity-40 backdrop-blur-sm shadow-md shadow-white w-full rounded-none" 
+            : "bg-opacity-100 shadow-sm shadow-white w-[112rem] mx-auto rounded-full"
+        } bg-gradient-to-r from-[#E5F1FF] via[#130A38]- to-[#130A38]`}
+      >
+        <div className="flex justify-between items-center py-2 px-4 lg:px-4">
+          {/* Logo */}
+          <div>
+            <img src={"/Logo.png"} alt="Logo" className="w-[50px]" />
           </div>
-        </div>
 
-        {/* Desktop "Let's Connect" Button */}
-        <div className="hidden lg:flex">
-          <Link href="#contact">
-            <button className="border-[1px] ml-4 w-[130px] h-[35px] hover:bg-gradient-to-t from-indigo-700 via-fuchsia-600 to-transparent rounded-md text-white font-semibold hover:animate-bounce">
-              Let's Connect
-            </button>
-          </Link>
-        </div>
+          {/* Desktop Navigation */}
+          <div className="hidden lg:flex lg:flex-row text-white justify-between space-x-[350px]">
+            <ul className="flex gap-4 text-[18px] font-bold">
+              <Link href="#hero"><li className="hover:text-[#3A0879] cursor-pointer">Home</li></Link>
+              <Link href="#project"><li className="hover:text-[#3A0879] cursor-pointer">Projects</li></Link>
+              <Link href="#skill"><li className="hover:text-[#3A0879] cursor-pointer">Skills</li></Link>
+              <Link href="#contact"><li className="hover:text-[#3A0879] cursor-pointer">Contact</li></Link>
+            </ul>
+            <div className="social-icons flex flex-row ml-60 justify-between space-x-2">
+              <a href="https://facebook.com/ExcellenceJnr" className="hover:bg-gradient-to-t from-indigo-700 via-fuchsia-600 to-transparent border-2 hover:animate-bounce rounded-full border-purple-600 p-2"><FaFacebook /></a>
+              <a href="https://github.com/stanley-samuel123" className="hover:bg-gradient-to-t from-indigo-700 via-fuchsia-600 to-transparent border-2 hover:animate-bounce rounded-full border-purple-600 p-2"><FaGithub /></a>
+              <a href="https://linkedin.com/in/stanley-samuel-8baa38277" className="hover:bg-gradient-to-t from-indigo-700 via-fuchsia-600 to-transparent border-2 hover:animate-bounce rounded-full border-purple-600 p-2"><FaLinkedin /></a>
+              <a href="https://instagram.com/stanleysamuel70" className="hover:bg-gradient-to-t from-indigo-700 via-fuchsia-600 to-transparent border-2 rounded-full hover:animate-bounce border-purple-600 p-2"><FaInstagram /></a>
+              <a href="https://wa.me/message/JFS322SF713HKI" className="hover:bg-gradient-to-t from-indigo-700 via-fuchsia-600 to-transparent border-2 hover:animate-bounce rounded-full border-purple-600 p-2"><FaWhatsapp /></a>
+            </div>
+          </div>
 
-        {/* Mobile Hamburger Icon */}
-        <div className="flex lg:hidden visible">
-          <FaAlignJustify size={30} className="text-white cursor-pointer" onClick={() => setMenuOpen(true)} />
+          {/* Desktop "Let's Connect" Button */}
+          <div className="hidden lg:flex">
+            <Link href="#contact">
+              <button className="border-[1px] w-[130px] h-[35px] hover:bg-gradient-to-t from-indigo-700 via-fuchsia-600 to-transparent rounded-md text-white font-semibold hover:animate-bounce">
+                Let's Connect
+              </button>
+            </Link>
+          </div>
+
+          {/* Mobile Hamburger Icon */}
+          <div className="flex lg:hidden visible">
+            <FaAlignJustify size={30} className="text-white cursor-pointer" onClick={() => setMenuOpen(true)} />
+          </div>
         </div>
       </div>
 

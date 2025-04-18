@@ -1,6 +1,5 @@
 import React from 'react'
-import pic from '../../public/pic.png'
-import { FaArrowRight } from 'react-icons/fa'
+import pic from '../../public/newimage.jpeg'
 import { TypeAnimation } from 'react-type-animation'
 import CountUp from 'react-countup'
 import { FaDownload, FaFacebook, FaWhatsapp, FaInstagram, FaLinkedin, FaGithub,} from 'react-icons/fa'
@@ -39,7 +38,7 @@ const Hero = () => {
   
   return (
     <>
-    <div id='hero' className='flex lg:flex-row flex-col-reverse justify-between px-0 bg-[url("/portfolio-img1.png")] pt-16 '>
+    <div id='hero' className='flex lg:flex-row flex-col-reverse justify-between px-0 bg-[url("/portfolio-img1.png")] pt-28'>
         <div className='lg:w-2/5 w-full text-white lg:text-left text-center md:px-20 rounded-xl bg-gradient-to-r from-black via-black to-transparent p-5' data-aos="fade-up-left" data-aos-duration="2000">
             <h1 className='font-extrabold text-4xl font-sans mt-4' data-aos="fade-up" data-aos-duration="2000">STANLEY SAMUEL</h1>
             <h4 className='text-2xl font-extrabold '> 
@@ -72,7 +71,7 @@ const Hero = () => {
         </div>
         <div className='mx-auto justify-between flex flex-col bg-gradient-to-r from-transparent  via-black to-transparent ' data-aos="fade-up-right" data-aos-duration="2000">
             <div className='rounded-full bg-gradient-to-b from- black to-transparent'>
-            <Image className='lg:mx-0 mx-auto rounded-full drop-shadow drop-shadow-white' src={pic} width={600} height={300} alt="" />
+            <Image className='lg:mx-0 mx-auto rounded-full drop-shadow drop-shadow-white' src={pic} width={500} height={280} alt="" />
             </div>
             <div className='social-icons flex flex-row justify-center py-2 space-x-2 visible lg:hidden md:hidden text-white mx-auto'>
                     <a href="https://facebook.com/ExcellenceJnr" className=' hover:bg-gradient-to-t from-indigo-700 via-fuchsia-600 to-transparent border-2 hover:animate-bounce rounded-full border-purple-600 p-2'><FaFacebook /></a>

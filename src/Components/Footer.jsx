@@ -78,7 +78,7 @@ const Footer = () => {
 
       <div className='bg-[#130A38] md:px-20'>
         <footer className='mx-auto -mt-[1px] w-full px-4 text-white '>
-          <div className='mx-auto grid w-full grid-cols-1  gap-x-[64px] pt-[286px] md:grid-cols-[340px_1fr] xl:grid-cols-[420px_1fr] mdscreen:pb-4'>
+          <div className='mx-auto grid w-full grid-cols-1 gap-x-[64px] pt-[360px] xl:pt-[356px] md:grid-cols-[340px_1fr] xl:grid-cols-[420px_1fr] '>
             {/* Left Section */}
           
 

@@ -14,6 +14,11 @@ const Contact = () => {
      
       const handleSubmit =(e)=>{
         e.preventDefault()
+console.log(feedback)
+        if(feedback.name === ""){
+          toast.error("Form fields cannot be empty")
+          return
+        }
       axios.post('api/sendemail', feedback)
       .then((response)=>{
         toast.success(response?.data?.message)
@@ -70,27 +75,27 @@ const Contact = () => {
 <div className="w-[2px] bg-gradient-to-b from-transparent via-gray-400 to-transparent xl:block hidden"></div>
 <div className="my-6 h-1 mx-5 bg-gradient-to-r from-white via-gray-400 to-transparent"></div>
 
-        <form onSubmit={handleSubmit} data-aos="fade-down" data-aos-duration="1500" className='xl:w-1/3 rounded-l-3xl bg-gradient-to-r from-[#00244D] via-indigo-700 to-transparent p-8 text-white flex flex-col ' >
+        <form onSubmit={handleSubmit} data-aos="fade-down" data-aos-duration="1500" className='xl:w-1/3 rounded-l-3xl bg-gradient-to-r from-[#130A38] via-[#130A38] to-transparent p-8 text-white flex flex-col ' >
             <h1 className='font-bold md:text-5xl text-3xl' data-aos="fade-in" data-aos-duration="2000">Get in Touch </h1>
             <p>Send us a Message</p>
             <div className=' mt-8 w-full space-y-7 bg-transparent outline-none  ' data-aos="fade-up" data-aos-duration="2000">
             <div className='flex flex-row mb-8' >
                 <input className='py-4 w-full bg-transparent border-b-2 outline-none placeholder:font-bold placeholder:text-white focus:border-blue-700 focus:placeholder:-translate-y-4 focus:placeholder:text-[8px] ' type="text" placeholder='Name' 
                 value={name} onChange={(e)=>{setName(e.target.value)}}/>
-            <FaUser className='absolute right-16 animate-bounce' />
+            <FaUser className='absolute right-5 animate-bounce' />
             </div>
             <div className='flex flex-row mb-20' >
                 <input className='w-full py-4  bg-transparent border-b-2 outline-none placeholder:font-bold placeholder:text-white focus:border-blue-700 focus:placeholder:-translate-y-4 focus:placeholder:text-[8px]' type="email" placeholder='Email'
                 value={email}  onChange={(e)=>{setEmail(e.target.value)}} />
-            <FaEnvelope className='absolute right-16 animate-bounce' />
+            <FaEnvelope className='absolute right-5 animate-bounce' />
             </div>
             <div className='flex flex-row' >
                 <input className='w-full bg-transparent border-b-2 outline-none py-4 placeholder:font-bold focus:border-blue-700  placeholder:text-white focus:placeholder:-translate-y-4 focus:placeholder:text-[8px]' type="text" placeholder='Your message here...' 
                 value={message} 
                 onChange={(e)=>{setMessage(e.target.value)}} />
-            <FaMessage className='absolute right-16 animate-bounce' />
+            <FaMessage className='absolute right-5 animate-bounce' />
             </div>
-            <button type='submit' className='p-2 shadow-black shadow-md rounded-3xl font-extrabold bg-[#130A38] cursor-pointer hover:scale-110 duration-500 transition'> Send Message</button>
+            <button type='submit' className='p-2 cursor-pointer shadow-black shadow-md rounded-3xl font-extrabold bg-white text-[#130A38] hover:scale-125 duration-500 transition'> Send Message</button>
             </div>
         </form>
        
