@@ -29,10 +29,10 @@ function Navbar() {
   return (
     <div className="flex justify-center w-full fixed top-0 z-50">
       <div 
-        className={`py-4 px-4 transition-all duration-300 ${
+        className={`py-2 md:py-4 px-4 transition-all duration-300 ${
           scrolled 
-            ? "bg-opacity-50 backdrop-blur-sm shadow-md shadow-white w-full rounded-none" 
-            : "bg-opacity-100 shadow-sm shadow-white w-[112rem] mx-auto rounded-full"
+            ? "bg-opacity-50 backdrop-blur-sm shadow-md shadow-white w-full rounded-full" 
+            : "bg-opacity-100 shadow-sm shadow-white w-[112rem] mx-auto rounded-none"
         } bg-gradient-to-r from-[#E5F1FF] via-[#130A38] to-[#130A38]`}
       >
         <div className="flex justify-between items-center py-2 px-4 lg:px-4">
