@@ -69,7 +69,7 @@ const Skills = () => {
         backdropFilter: 'blur(10px)'
       }}>
         <div className='mx-auto flex-col'>
-          <div className='mx-auto flex flex-col justify-center items-center py-10 text-center px-6 ' data-aos="fade-up" data-aos-duration="1500">
+          <div className='xl:mx-auto flex flex-col justify-center items-center py-10 text-center px-6 ' data-aos="fade-up" data-aos-duration="1500">
             <h1 className='font-extrabold text-3xl mb-6 relative pb-3'>
               <span className='relative z-10 underline '>Skills</span>
             </h1>

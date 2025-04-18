@@ -43,7 +43,7 @@ const Hero = () => {
             <h1 className='font-extrabold text-4xl font-sans mt-4' data-aos="fade-up" data-aos-duration="2000">STANLEY SAMUEL</h1>
             <h4 className='text-2xl font-extrabold '> 
              I am a <br /> <TypeAnimation speed={50}
-            repeat={Infinity} className='text-blue-800 bg-white rounded-3xl px-4 text-2xl leading-[2]' sequence={[
+            repeat={Infinity} className='text-[#130A38] bg-white rounded-3xl px-4 text-2xl leading-[2]' sequence={[
               'FullStack Developer', 2000,
               'Automation Tester', 2000,
               'Backend Developer', 2000,
@@ -67,7 +67,7 @@ const Hero = () => {
             <p className='w-[100px] font-extrabold'>Satisfied Clients</p>
             </div>
             </div>
-            <button data-aos="flip-left" data-aos-duration="2000" className='flex lg:mx-0 mx-auto flex-row bg-[#00244D] py-2 px-4 font-bold rounded-lg items-center mt-6 border-2 border-white border-inset hover:scale-125 transition duration-500' onClick={download}>Download CV<FaDownload size={13} className=' ml-4 '/></button>
+            <button data-aos="flip-left" data-aos-duration="2000" className='flex lg:mx-0 mx-auto flex-row bg-white py-2 px-4 font-bold rounded-lg items-center mt-6 border-2 border-[#130A38] shadow shadow-white text-[#130A38] border-inset hover:scale-125 transition duration-500' onClick={download}>Download CV<FaDownload size={13} className=' ml-4 '/></button>
         </div>
         <div className='mx-auto justify-between flex flex-col bg-gradient-to-r from-transparent  via-black to-transparent ' data-aos="fade-up-right" data-aos-duration="2000">
             <div className='rounded-full bg-gradient-to-b from- black to-transparent'>

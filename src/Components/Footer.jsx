@@ -1,16 +1,3 @@
-// import React from 'react'
-
-// const Footer = () => {
-//   return (
-//     <div className='bg-[#130A38] text-white mx-auto py-10'>
-//       <p className='text-center font-bold'>Copyright &copy; Stanley Samuel Arikpo 2025</p>
-//       <h1 className='text-center font-extrabold'>Fullstack Developer</h1>
-//     </div>
-//   )
-// }
-
-// export default Footer
-
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
@@ -32,20 +19,20 @@ const Footer = () => {
 
   return (
     <div className=' w-full overflow-hidden relative '>
-      <div className='absolute left-1/2 -top-[30px] w-full max-w-[1070px] -translate-x-1/2 px-4 z-50'>
-        <div className='flex h-[310px] flex-row  items-center justify-between rounded-xl bg-[#E5F1FF] z-50 p-6 pt-25  md:h-[400px] md:pl-[140px] lg:relative ' data-aos="fade-up-right" data-aos-duration="2000">
+      <div className='absolute left-1/2 -top-[30px] w-full max-w-[1070px] -translate-x-1/2 px-4 '>
+        <div className='flex h-[310px] flex-row  items-center justify-between rounded-xl bg-[#E5F1FF]  p-6 pt-25  md:h-[400px] md:pl-[140px] lg:relative ' data-aos="fade-up-right" data-aos-duration="2000">
           <div className='text-left'>
             <h1 className='w-[15.9375rem] font-neueMontreal text-[1.5rem] font-medium leading-[120%] text-[#130A38] lg:w-full lg:text-[3rem]'>
               Lets Get Started
             </h1>
-            <p className='mt-2  w-[15.9375rem] font-neueMontreal  text-[0.875rem]  leading-[160%] text-neutral-800 md:w-[26.875rem] lg:text-[1rem]'>
+            <p className='mt-2  w-[15.9375rem] font-neueMontreal text-[0.875rem] leading-[160%] text-neutral-800 md:w-[26.875rem] lg:text-[1rem]'>
               Contact our team to learn more about what we can help you build –
               or create an account to get started right away.
             </p>
             <div className='mt-6 flex flex-col gap-6 font-sfPro sm:flex-row'>
               <Link
                 href='#contact'
-                className='flex w-[12.4375rem] items-center justify-center gap-[0.625rem] rounded-[2.5rem] bg-[#130A38]  py-3 text-[14px] font-medium leading-[160%] text-white md:w-[13.4375rem]'
+                className='flex w-[12.4375rem] items-center justify-center gap-[0.625rem] rounded-[2.5rem] bg-[#130A38] py-3 text-[14px] font-medium leading-[160%] text-white md:w-[13.4375rem]'
               >
                 Book an Appointment{' '}
                 <Image
@@ -57,7 +44,7 @@ const Footer = () => {
               </Link>
               <Link
                 href='#hero'
-                className='flex items-center justify-start gap-2 pl-6 font-medium leading-[160%]  text-blue-800 md:w-[8.8125rem] md:justify-center md:rounded-[2.5rem] md:border md:border-blue-800 xl:border-none mdscreen:pl-0'
+                className='flex items-center justify-start gap-2 pl-6 font-medium leading-[160%] text-blue-800 md:w-[8.8125rem] md:justify-center md:rounded-[2.5rem] md:border md:border-blue-800 xl:border-none mdscreen:pl-0'
               >
                 Explore{' '}
                 <Image
@@ -78,12 +65,12 @@ const Footer = () => {
 
       <div className='bg-[#130A38] md:px-20'>
         <footer className='mx-auto -mt-[1px] w-full px-4 text-white '>
-          <div className='mx-auto grid w-full grid-cols-1 gap-x-[64px] pt-[360px] xl:pt-[356px] md:grid-cols-[340px_1fr] xl:grid-cols-[420px_1fr] '>
+          <div className='mx-auto grid w-full grid-cols-1 gap-x-[64px] pt-[370px] md:pt-[360px] xl:pt-[366px] md:grid-cols-[340px_1fr] xl:grid-cols-[420px_1fr] '>
             {/* Left Section */}
           
 
             {/* Right Section */}
-            <div className=''>
+
               <div className='flex w-full flex-wrap items-center gap-x-[64px] gap-y-6 pt-2 xl:mt-[65px]'>
                 {footerItems.map((item) => (
                   <div key={item.name} className=''>
@@ -96,7 +83,6 @@ const Footer = () => {
                     </a>
                   </div>
                 ))}
-              </div>
 
               <div className='item-center mt-[60px] flex md:flex-row flex-col md:gap-[56px] font-sfPro xl:mt-[25px]'>
                 <div className='flex items-center gap-[3px]'>

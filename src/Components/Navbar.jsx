@@ -86,7 +86,7 @@ function Navbar() {
             animate={{ x: "0%" }}
             exit={{ x: "100%" }}
             transition={{ type: "tween", duration: 0.3 }}
-            className="fixed top-0 right-0 h-screen w-[70%] rounded-tl-[30px] bg-[url('/site-bg.jpg')] z-50 shadow-lg flex flex-col items-center py-8"
+            className="fixed top-0 right-0 h-screen w-[70%] rounded-tl-[30px] bg-gradient-to-b from-[#130A38] via-[#130A38] to-[#E5F1FF] z-50 shadow-lg flex flex-col items-center py-8"
           >
             {/* Close Button */}
             <FaRegWindowClose

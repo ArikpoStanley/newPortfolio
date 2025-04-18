@@ -46,7 +46,7 @@ console.log(feedback)
         />
     
     <div className="flex flex-col">
-  <div className="social-icons flex flex-row justify-between space-x-2 xl:mx-auto sm:ml-0 mb-5">
+  <div className="social-icons flex flex-row justify-between space-x-2 mb-5">
     <a href="https://facebook.com/ExcellenceJnr" className="hover:bg-gradient-to-t from-indigo-700 via-fuchsia-600 to-transparent border-2 hover:animate-bounce rounded-full border-purple-600 p-2">
       <FaFacebook className="text-white" />
     </a>
@@ -73,7 +73,7 @@ console.log(feedback)
 </div>
 
 <div className="w-[2px] bg-gradient-to-b from-transparent via-gray-400 to-transparent xl:block hidden"></div>
-<div className="my-6 h-1 mx-5 bg-gradient-to-r from-white via-gray-400 to-transparent"></div>
+<div className="my-6 h-1 bg-gradient-to-r from-white via-gray-400 to-transparent"></div>
 
         <form onSubmit={handleSubmit} data-aos="fade-down" data-aos-duration="1500" className='xl:w-1/3 rounded-l-3xl bg-gradient-to-r from-[#130A38] via-[#130A38] to-transparent p-8 text-white flex flex-col ' >
             <h1 className='font-bold md:text-5xl text-3xl' data-aos="fade-in" data-aos-duration="2000">Get in Touch </h1>
