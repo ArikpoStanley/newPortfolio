@@ -51,6 +51,7 @@ const Projects = () => {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   const filterOptions = ["All", "Completed", "In progress"];
+  console.log(projects)
 
   return (
     <div id="project" className="bg-black text-white py-16" style={{background: "linear-gradient(to bottom, #0e0425 0%, #1a0536 100%)"}}>
@@ -121,7 +122,16 @@ const Projects = () => {
                     <p className="text-gray-400 text-sm mb-4 line-clamp-2">
                       {project.description || "A fantastic project showcasing my skills and creativity."}
                     </p>
-                    <div className="flex justify-end">
+                    <div className="flex justify-between">
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-3 py-2 rounded-md hover:bg-gradient-to-t from-[#130A38] to-transparent bg-[#130A38] transition-colors duration-300 text-sm"
+                      >
+                        Github
+                      </a>
+
                       <a
                         href={project.url}
                         target="_blank"

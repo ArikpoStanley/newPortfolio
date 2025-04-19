@@ -1,5 +1,6 @@
 import { useState } from "react";
 import toast from "react-hot-toast";
+import { useParams } from "next/navigation";
 
 const Admin = () => {
   const [title, setTitle] = useState("");
@@ -7,6 +8,8 @@ const Admin = () => {
   const [githubLink, setGithubLink] = useState("");
   const [status, setStatus] = useState("pending");
   const [selectedFile, setSelectedFile] = useState(null);
+  const { id } = useParams()
+  console.log(id)
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
@@ -41,15 +44,42 @@ const Admin = () => {
       toast.error("Failed to submit project.");
     }
   };
+
+  const handleUpdate = async (event) => {
+    event.preventDefault();
+  
+    const formData = new FormData();
+    if (selectedFile) {
+      formData.append("image", selectedFile);
+    }
+    formData.append("title", title);
+    formData.append("url", url);
+    formData.append("githubLink", githubLink);
+    formData.append("status", status);
+  
+    try {
+      const response = await fetch("api/update", {
+        method: "POST",
+        body: formData,
+      });
+  
+      const data = await response.json();
+      console.log("Server Response:", data);
+      toast.success("Project successfully added!");
+    } catch (error) {
+      console.error("Upload failed:", error);
+      toast.error("Failed to submit project.");
+    }
+  };
   
 
   return (
     <div className="max-w-lg mx-auto p-6 bg-white shadow-md rounded-lg">
       <h2 className="text-2xl font-bold mb-4">Add Project</h2>
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Project Title" className="w-full p-2 border rounded" required />
+      <form onSubmit={id? handleUpdate : handleSubmit} className="space-y-4">
+        <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Project Title" className="w-full p-2 border rounded" />
 
-        <input type="url" value={url} onChange={(e) => setUrl(e.target.value)} placeholder="Project URL" className="w-full p-2 border rounded" required />
+        <input type="url" value={url} onChange={(e) => setUrl(e.target.value)} placeholder="Project URL" className="w-full p-2 border rounded"/>
 
         <input type="file" accept="image/*" onChange={handleImageChange} className="w-full p-2 border rounded" />
         {selectedFile && <img src={URL.createObjectURL(selectedFile)} alt="Preview" className="w-32 h-32 object-cover mt-2" />}
@@ -64,7 +94,7 @@ const Admin = () => {
         </select>
 
         <button type="submit" className="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">
-          Submit
+          {id? "Update" : "Submit"}
         </button>
       </form>
     </div>
