@@ -31,9 +31,9 @@ function Navbar() {
       <div 
         className={`py-2 md:py-4 px-4 transition-all duration-300 ${
           scrolled 
-            ? "bg-opacity-50 backdrop-blur-sm shadow-md shadow-white w-full rounded-full" 
-            : "bg-opacity-100 shadow-sm shadow-white w-[112rem] mx-auto rounded-none"
-        } bg-gradient-to-r from-[#E5F1FF] via-[#130A38] to-[#130A38]`}
+            ? "bg-opacity-50 backdrop-blur-sm shadow-md shadow-white rounded-full" 
+            : "bg-opacity-100 shadow-md shadow-white rounded-none"
+        } bg-gradient-to-r from-[#E5F1FF] via-[#130A38] to-[#130A38] w-full`}
       >
         <div className="flex justify-between items-center py-2 px-4 lg:px-4">
           {/* Logo */}
@@ -61,7 +61,7 @@ function Navbar() {
           {/* Desktop "Let's Connect" Button */}
           <div className="hidden lg:flex">
             <Link href="#contact">
-              <button className="border-[1px] w-[130px] h-[35px] hover:bg-gradient-to-t from-indigo-700 via-fuchsia-600 to-transparent rounded-md text-white font-semibold hover:animate-bounce">
+              <button className="border-[1px] w-[130px] h-[35px] font-bold hover:bg-white hover:text-[#130A38] rounded-md text-white hover:scale-125 duration-500">
                 Let's Connect
               </button>
             </Link>
