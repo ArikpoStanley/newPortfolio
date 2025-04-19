@@ -1,5 +1,5 @@
 import React from 'react'
-import pic from '../../public/newimage.png'
+import pic from '../../public/downloadImage1.png'
 import { TypeAnimation } from 'react-type-animation'
 import CountUp from 'react-countup'
 import { FaDownload, FaFacebook, FaWhatsapp, FaInstagram, FaLinkedin, FaGithub,} from 'react-icons/fa'

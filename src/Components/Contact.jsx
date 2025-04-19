@@ -17,8 +17,23 @@ const Contact = () => {
         e.preventDefault()
         console.log(feedback)
         
-        if(feedback.name === ""){
+        if(feedback.name === "" && feedback.email === "" && feedback.message === ""){
           toast.error("Form fields cannot be empty")
+          return
+        }
+
+        if(feedback.name === ""){
+          toast.error("Name cannot be empty")
+          return
+        }
+
+        if(feedback.email === ""){
+          toast.error("Email cannot be empty")
+          return
+        }
+
+        if(feedback.message === ""){
+          toast.error("message cannot be empty")
           return
         }
         
