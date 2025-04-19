@@ -22,6 +22,9 @@ const ProjectSchema = new mongoose.Schema(
       type: String,
       default: '/uploads/example.jpeg',
     },
+    description: {
+      type: String,
+    },
     status: {
       type: String,
       required: [true, 'Please provide status'],

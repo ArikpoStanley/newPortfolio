@@ -29,13 +29,14 @@ export async function POST(req) {
             access: 'public', // Make image publicly accessible
           });
              
-          const { url, title, githubLink, status } = Object.fromEntries(formData.entries());
+          const { url, title, githubLink, status, description } = Object.fromEntries(formData.entries());
 
             const project = await Projects.create({
             image: blob.url, // Save the image URL in the database
             url,
             title,
             githubLink,
+            description,
             status,
             });
             return Response.json(

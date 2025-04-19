@@ -8,6 +8,7 @@ const Admin = () => {
   const [githubLink, setGithubLink] = useState("");
   const [status, setStatus] = useState("pending");
   const [selectedFile, setSelectedFile] = useState(null);
+  const [description, setDescription] = useState("")
   const { id } = useParams()
   console.log(id)
 
@@ -25,6 +26,7 @@ const Admin = () => {
     if (selectedFile) {
       formData.append("image", selectedFile);
     }
+    formData.append("id", id)
     formData.append("title", title);
     formData.append("url", url);
     formData.append("githubLink", githubLink);
@@ -52,6 +54,8 @@ const Admin = () => {
     if (selectedFile) {
       formData.append("image", selectedFile);
     }
+    formData.append("id", id)
+    formData.append("description", description)
     formData.append("title", title);
     formData.append("url", url);
     formData.append("githubLink", githubLink);
@@ -62,6 +66,8 @@ const Admin = () => {
         method: "POST",
         body: formData,
       });
+
+      console.log(response)
   
       const data = await response.json();
       console.log("Server Response:", data);
@@ -77,7 +83,7 @@ const Admin = () => {
     <div className="max-w-lg mx-auto p-6 bg-white shadow-md rounded-lg">
       <h2 className="text-2xl font-bold mb-4">Add Project</h2>
       <form onSubmit={id? handleUpdate : handleSubmit} className="space-y-4">
-        <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Project Title" className="w-full p-2 border rounded" />
+        <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Project Title" className="w-full p-2 border rounded"/>
 
         <input type="url" value={url} onChange={(e) => setUrl(e.target.value)} placeholder="Project URL" className="w-full p-2 border rounded"/>
 
@@ -85,6 +91,7 @@ const Admin = () => {
         {selectedFile && <img src={URL.createObjectURL(selectedFile)} alt="Preview" className="w-32 h-32 object-cover mt-2" />}
 
         <input type="url" value={githubLink} onChange={(e) => setGithubLink(e.target.value)} placeholder="GitHub Repository Link" className="w-full p-2 border rounded" />
+        <textarea type="url" value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Add a Description" className="w-full p-2 border rounded" />
 
         <select value={status} onChange={(e) => setStatus(e.target.value)} className="w-full p-2 border rounded">
         <option value="pending">Pending</option>
