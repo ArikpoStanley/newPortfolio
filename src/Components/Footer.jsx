@@ -31,7 +31,7 @@ const Footer = () => {
             </p>
             <div className='mt-6 flex flex-col gap-6 font-sfPro sm:flex-row'>
               <Link
-                href='#contact'
+                href='https://calendly.com/arikpostanley123/30min'
                 className='flex w-[12.4375rem] items-center justify-center gap-[0.625rem] rounded-[2.5rem] bg-[#130A38] py-3 text-[14px] font-medium leading-[160%] text-white md:w-[13.4375rem]'
               >
                 Book an Appointment{' '}
