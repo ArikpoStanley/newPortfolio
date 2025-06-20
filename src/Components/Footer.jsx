@@ -26,8 +26,8 @@ const Footer = () => {
               Lets Get Started
             </h1>
             <p className='mt-2  w-[15.9375rem] font-neueMontreal text-[0.875rem] leading-[160%] text-neutral-800 md:w-[26.875rem] lg:text-[1rem]'>
-              Contact our team to learn more about what we can help you build –
-              or create an account to get started right away.
+              Contact me to learn more about what i can help you build –
+              or book an appointment to get started right away.
             </p>
             <div className='mt-6 flex flex-col gap-6 font-sfPro sm:flex-row'>
               <Link
